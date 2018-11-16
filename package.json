@@ -1,6 +1,6 @@
 {
     "name": "parse-content-range-header",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Parses a Content-Range header and returns total number, start and end indexes of the current page records",
     "main": "index.js",
     "keywords": [
