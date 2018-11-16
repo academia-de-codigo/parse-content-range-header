@@ -1,0 +1,11 @@
+# dependencies
+/node_modules
+
+# vscode
+.vscode
+
+# misc
+/tmp
+.DS_Store
+npm-debug.log*
+*.swp

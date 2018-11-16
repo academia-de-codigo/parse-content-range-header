@@ -1,0 +1,30 @@
+{
+    "name": "parse-content-range-header",
+    "version": "0.1.0",
+    "description": "Parses a Content-Range header and returns total number, start and end indexes of the current page records",
+    "main": "index.js",
+    "keywords": [
+        "parse",
+        "Content-Range",
+        "content range",
+        "header",
+        "http",
+        "web",
+        "7233"
+    ],
+    "scripts": {
+        "test": "mocha"
+    },
+    "author": "<Academia de Código_>",
+    "license": "MIT",
+    "devDependencies": {
+        "eslint": "^5.9.0",
+        "eslint-config-standard": "^12.0.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-mocha": "^5.2.0",
+        "eslint-plugin-node": "^8.0.0",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-standard": "^4.0.0",
+        "mocha": "^5.2.0"
+    }
+}
