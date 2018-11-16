@@ -15,6 +15,10 @@
     "scripts": {
         "test": "mocha"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/academia-de-codigo/parse-content-range-header.git"
+    },
     "author": "<Academia de Código_>",
     "license": "MIT",
     "devDependencies": {
