@@ -56,6 +56,15 @@ describe('Content-range header parser', () => {
         });
     });
 
+    it('should parse header with zero size', () => {
+        assert.deepEqual(parse('0'), {
+            unit: null,
+            first: null,
+            last: null,
+            length: 0
+        });
+    });
+
     it('should parse header with type but unknown size', () => {
         assert.deepEqual(parse('items *'), {
             unit: 'items',
@@ -78,7 +87,12 @@ describe('Content-range header parser', () => {
         assert.equal(parse('foooooo'), null);
     });
 
+    it('should return null if no argument is passed', function() {
+        assert.equal(parse(null), null);
+        assert.equal(parse(undefined), null);
+    });
+
     it('should throw if argument is not a string', function() {
-        assert.throws(() => parse(null), Error);
+        assert.throws(() => parse({}), Error);
     });
 });

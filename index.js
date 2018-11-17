@@ -13,6 +13,10 @@
  *    @return {ParseResult}
  */
 module.exports = function(headerValue) {
+    if (!headerValue) {
+        return null;
+    }
+
     if (typeof headerValue !== 'string') {
         throw new Error('invalid argument');
     }
