@@ -12,7 +12,7 @@
  *    	and on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Range#Syntax)
  *    @return {ParseResult}
  */
-module.exports = function(headerValue) {
+module.exports = function (headerValue) {
     if (!headerValue) {
         return null;
     }
@@ -21,7 +21,7 @@ module.exports = function(headerValue) {
         throw new Error('invalid argument');
     }
 
-    const parseInt = number => Number.parseInt(number, 10);
+    const parseInt = (number) => Number.parseInt(number, 10);
 
     // Check for presence of unit
     let matches = headerValue.match(/^(\w*) /);

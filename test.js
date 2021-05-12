@@ -83,16 +83,16 @@ describe('Content-range header parser', () => {
         });
     });
 
-    it('should return null if parse fail', function() {
+    it('should return null if parse fail', function () {
         assert.equal(parse('foooooo'), null);
     });
 
-    it('should return null if no argument is passed', function() {
+    it('should return null if no argument is passed', function () {
         assert.equal(parse(null), null);
         assert.equal(parse(undefined), null);
     });
 
-    it('should throw if argument is not a string', function() {
+    it('should throw if argument is not a string', function () {
         assert.throws(() => parse({}), Error);
     });
 });
